@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./Templates/TemplateHome.xhtml">
+
+            <ui:define name="left" >
+
+                <p:menu style="background: #ffffff; border: 0px; margin-top: 10px">
+                    <p:menuitem value="Inicio" url="#" icon="ui-icon-home" />
+                    <p:menuitem value="Item 1" url="#" icon="ui-icon-tag" />
+                    <p:menuitem value="Item 2" url="#" icon="ui-icon-tag" />
+                    <p:menuitem value="Item 3" url="#" icon="ui-icon-tag" />
+                    <p:menuitem value="Item 4" url="#" icon="ui-icon-tag" />
+                    <p:menuitem value="Item 5" url="#" icon="ui-icon-tag" />
+                </p:menu>
+
+                <p:separator style="margin-bottom: 20px" ></p:separator>
+                
+                <p:columnGroup >
+                    <p:outputLabel value="Usuario:"></p:outputLabel>
+                    <p:inputText style="width: 135px; margin-top: 5px; margin-bottom: 5px" ></p:inputText> 
+                    <p:outputLabel value="Contraseña:"></p:outputLabel>
+                    <p:inputText style="width: 135px; margin-top: 5px" ></p:inputText>  
+                    <h:commandButton value="Ingresar" style="width: 145px; margin-top: 5px"></h:commandButton>
+                </p:columnGroup>
+
+            </ui:define>
+
+            <ui:define name="content">
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
